@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            body{
+                background: white;
+            }
+            header{
+                padding: 20px 0;
+                margin-bottom: 30px;
+                background: purple;
+            }
+            main{
+                height: 100vh;
+                display: block;
+                margin: 0 auto;
+                width: 90%;
+            }
+            footer{
+                background: rgb(30, 30, 30);
+                color: white;
+                width: 100%;
+                bottom: 0;
+                padding: 20px 0;
+                display: flex;
+                justify-content: space-evenly;
+                padding: 60px 0;
+            }
+            a{
+                text-decoration: none;
+                color: purple;
+            }
+            .container{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            h1{
+                font-size: 30px;
+                width: 100%;
+            }
+            h3{
+                background: gray;
+                width: fit-content;
+                display: block;
+                margin: auto;
+                padding: 20px;
+                border-radius: 20px;
+                border: 3px solid rgb(65, 65, 65);
+            }
+            .card{
+                background: rgb(78, 78, 78);
+                text-align: center;
+                border: 3px solid rgb(161, 161, 161);
+                border-radius: 30px;
+                width: 400px;
+                height: 70px;
+                overflow: hidden;
+            }
+            .card:hover{
+                height: fit-content;
+                overflow: hidden;
+            }
+            .card .card-head{
+                background: gray;
+                color: yellow;
+                padding-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+                margin-bottom: 5px;
+                border-bottom: 2px solid rgb(161, 161, 161);
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            .text{
+                color: orange;
+                font-weight: 600;
+                display: block;
+                margin: 0 auto;
+                width: 300px;
+                text-align: left;
+                padding-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="messageBody">
+            <header>
+                <h1 style="text-align: center;">
+                    Hello, My name is Edgar Tshagharyan.
+                </h1>
+            </header>
+            <main>
+                <div class="container">
+                    <div class="card">
+                        <div class="card-head">
+                            <h1>
+                                About me
+                            </h1>
+                        </div>
+                        <div class="card-body">
+                            <p class="text">
+                                I am from Yerevan, I speak Armenian as my mother language so its excellent, as well I speak English fluently. I can say that my level in English is pretty advanced as well as my Russian knowledge.
+
+                                I have a good knowledge in php, css, html, JavaScript, a little bit of React.js and a lot of Laravel 9. I am good at analysing and developing things as well as time and resources management and problem solving are something I am good at.
+
+                                Thinking out the box is my way in life. People consider me as an influencer and a natural born developer.
+
+                                I am confident  that I can bring good value to your team.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-head">
+                            <h1>
+                                My experience in Yerevan
+                            </h1>
+                        </div>
+                        <div class="card-body">
+                            <p class="text">
+                                I've worked as a freelancer, and my best project was for a guy, who calls himself as Gyber.
+
+                                I've tried myself in many different parts of IT world, such as: video editing, game development, graphic design, digital art, music making, and SMM with CEO.
+
+                                I am looking for new experiences and I want to get more knowledge about different fields.
+
+                                I am positive that I can be a great value for your team.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-head">
+                            <h1>
+                                Additional info
+                            </h1>
+                        </div>
+                        <div class="card-body">
+                            <p class="text">
+                                I would appreciate the opportunity to meet with you to further discuss my qualifications and to see if working for your company would be mutually beneficial. May I contact you in a few days to set up a convenient time to speak with you? I can also be reached anytime at +374-41-709-494.
+                                Thank you for your time and consideration. I look forward to speaking with you soon.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <p>
+                    <a href="{{ $link }}">I got your email from here.</a>
+                </p>
+                <br>
+                <p>
+                    Sincerely, Edgar Tshagharyan
+                </p>
+                <br>
+                <p>
+                    This email made in a Laravel 9 project.<br>
+                    (the design is still a work in progress).
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
