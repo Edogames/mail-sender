@@ -161,7 +161,9 @@
                 </p>
                 <br>
                 <p>
-                    This email made in a Laravel 9 project.<br>
+                    <a href="https://github.com/Edogames/mail-sender">
+                        This email made in a Laravel 9 project.<br>
+                    </a>
                     (the design is still a work in progress).
                 </p>
             </footer>

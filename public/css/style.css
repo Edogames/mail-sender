@@ -13,14 +13,35 @@ form{
     border-radius: 20px;
     outline: 3px solid white;
     display: block;
+    box-shadow: 0 0 60px gray;
     margin: auto;
+    margin-top: 200px;
+}
+button{
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    background: green;
+}
+input{
+    background: black;
 }
 form input, button{
+    z-index: 1;
     font-size: xx-large;
     border: none;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 20px;
+    outline: 2px solid white;
+    transform: scale(1);
+}
+form input:hover, button:hover{
+    z-index: 11;
+    outline: 2px solid yellow;
+    box-shadow: 0 0 20px yellow;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.05);
 }
 
 h1{
